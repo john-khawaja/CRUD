@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eed2bf;
+    color: #3a2a2f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.2s;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: 0 0 0 1px #3a2a2f;
+    transition: 0.2s;
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    margin: 0 8px;
+    border-radius: 2px;
+}
+
+#total::before {
+    content: 'Total: ';
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #3a2a2f;
+    color: white;
+    transition: 0.2s;
+    border-radius: 2px;
+    margin: 4px 0;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnSearch button {
+    width: 49%;
+}
+
+.btnSearch button {
+    background-color: #eed2bf;
+    border: 1px solid #3a2a2f;
+    color: #3a2a2f;
+}
+
+button#update {
+    background-color: green;
+    transition: 0.2s;
+}
+
+button#update:hover {
+    opacity: 0.7;
+}
+
+#deleteAll button, button#delete {
+    background-color: red;
+    transition: 0.2s;
+}
+
+#deleteAll button:hover, button#delete:hover {
+    opacity: 0.7;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+th, tr, td {
+    padding: 5px;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 1px solid #eed2bf;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+td.first, td.first-row {
+    background-color: #eeeeee;
+}
+
+td {
+    border: 1px solid #eed2bf;
+}
